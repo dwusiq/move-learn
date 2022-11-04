@@ -6,15 +6,3 @@ module 0x01::GenericsModule{
     } 
    
 }
-
-module 0x01::Generices_test{
-    use 0x1::GenericsModule;
-
-    #[test]
-    fun main(){
-        let a = 1;
-        let b = true;
-        GenericsModule::show(&a);
-        GenericsModule::show(&b);
-    }
-}

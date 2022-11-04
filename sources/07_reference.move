@@ -16,17 +16,3 @@ module 0x01::ReferenceModule{
 
 
 }
-
-module 0x01::reference_test{
-   use 0x1::debug;
-   use 0x01::ReferenceModule;
-
-    #[test]
-    fun main(){
-       let (a,b) = (5,6);
-    //    ReferenceModule::swapFail(a,b);
-       ReferenceModule::swapSuccess(&mut a,&mut b);
-      debug::print(&a);
-       debug::print(&b);
-    }   
-}

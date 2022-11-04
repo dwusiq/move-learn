@@ -5,15 +5,3 @@ module 0x01::SignerModule{
         return (signer::address_of(sn))
     }
 }
-
-
-module 0x01::SignerTest{
-    use 0x1::debug;
-    use 0x01::SignerModule;
-
-     #[test(sn = @0x125)]
-     fun signer_test_main(sn: &signer){
-       let addr = SignerModule::signer_address(sn);
-       debug::print(&addr)
-    }
-}

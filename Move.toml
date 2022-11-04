@@ -8,4 +8,4 @@ AptosStdlib = { local = "/mnt/e/ProgramForUbuntu/aptos-core/aptos-move/framework
 
 
 [addresses]
-Sender='0x9f061d4b5ce1068d5f1c5c29b1c8d3bad66427962c9bf8668e1ab31de7d0eaba'
+Sender='0x12'

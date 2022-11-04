@@ -17,19 +17,3 @@ module 0x03::User{
         return s.id
     }
 }
-
-module 0x03::user_test{
-   use 0x1::debug;
-    use 0x03::User;
-
-    #[test]
-    fun main(){
-        let id:u64 = 10;
-        let age:u8 = 8;
-        let sex:bool = true;
-
-        let student = User::init(id,age,sex);
-        let id:u64 = User::get_id(student);
-        debug::print(&id);
-    }   
-}
